@@ -1,19 +1,20 @@
-import { FacebookLogin } from "../../../packages/facebook/src/facebook"
+import { FacebookLogin } from "../../../packages/facebook/src/index";
 
 function App() {
-
-  const responseFacebook = (response) => {
-    console.log(response)
-  }
+  const responseFacebook = (response: any) => {
+    console.log(response);
+  };
 
   return (
     <>
-      <FacebookLogin appId="1088597931155576"
-    autoLoad={true}
-    callback={responseFacebook}
-    icon="fa-facebook"   />
+      <FacebookLogin
+        appId="1088597931155576"
+        autoLoad={true}
+        callback={responseFacebook}
+        icon="fa-facebook"
+      />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

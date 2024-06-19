@@ -4,9 +4,7 @@
   "description": "A Component React for Facebook Login",
   "main": "dist/facebook-login.js",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --config webpack.config.js --host $IP --port $PORT",
-    "bundle": "NODE_ENV=production webpack -p --config webpack.config.dist.js",
-    "test": "node_modules/.bin/eslint src/**/*.js"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -28,12 +26,8 @@
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "css-loader": "^7.1.2",
     "react": "^15.7.0",
     "react-dom": "^15.7.0",
-    "sass": "^1.77.6",
-    "sass-loader": "^14.2.1",
-    "style-loader": "^4.0.0",
     "tslib": "^2.6.3",
     "typescript": "^5.4.5"
   },
